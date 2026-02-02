@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
-/* * {
-    outline: 1px solid blue;
-} */
+* {
+    box-sizing: border-box;
+    /* outline: 1px solid blue; */
+}
 
 /* General */
 
@@ -43,7 +44,7 @@ body {
     align-items: center;
     gap: 3px;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     margin-left: 30px
 }
@@ -95,30 +96,31 @@ a {
 
 .hero {
     width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    gap: 5px;
     margin: 0 auto;
 }
 
 .hero-container {
-    height: 70vh;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 100px;
-    margin: 50px 0;
+    gap: 25px;
+    padding: 5rem;
+}
+
+.hero-text {
+    width: 30rem;
+    padding: 25px;
+
 }
 
 .hero h1 {
-    width: 30rem;
     font-size: 2rem;
     font-weight: 600;
 }
 
 .hero p {
-    width: 28vw;
     font-size: 1rem;
     line-height: 28px;
     margin-top: 40px;
@@ -138,6 +140,8 @@ a {
 }
 
 .hero-image img {
+    width: 100%;
+    max-width: 35rem;
     border-radius: 10px;
     box-shadow: 5px 5px 12px var(--black-bg-color);
 }
@@ -155,7 +159,7 @@ a {
     justify-content: center;
     gap: 25px;
     color: var(--black-bg-color);
-    padding: 50px;
+    padding: 5rem;
 }
 
 .trusted-container h2 {
@@ -168,6 +172,8 @@ a {
 .companies-logos {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     box-shadow: 5px 5px 12px black;
 }
@@ -188,8 +194,8 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    height: 60vh;
-    padding: 50px;
+    gap: 10px;
+    padding: 8rem;
     background-color: var(--brown-bg-color);
     color: var(--white-bg-color);
 }
@@ -199,7 +205,8 @@ a {
 }
 
 .value p {
-    width: 40vw;
+    width: 100%;
+    max-width: 40rem;
     font-weight: 200;
     line-height: 1.5rem;
 }
@@ -213,15 +220,17 @@ a {
     font-weight: 100;
 }
 
-.image {
+.value-image {
+    width: 100%;
+    max-width: 30rem;
     border-radius: 7px;
     box-shadow: 5px 5px 12px var(--black-bg-color);
 }
 
+/* Benefits */
 
 .benefits {
     width: 100%;
-
     background-size: cover;
     background-position: center;
 
@@ -233,12 +242,13 @@ a {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    height: 70vh;
-    padding: 30px;
     color: var(--black-bg-color);
+    padding: 4.5rem;
 }
 
 .benefits img {
+    width: 100%;
+    max-width: 550px;
     border-radius: 5px;
     box-shadow: 1px 2px 12px var(--black-bg-color);
     opacity: 90%;
@@ -249,15 +259,18 @@ a {
 }
 
 .benefits p {
-    width: 35vw;
+    width: 100%;
+    max-width: 35rem;
 }
 
 .article-container {
     border-radius: 5px;
-    padding: 25px;
-    margin: 50px;
     opacity: 90%;
+    padding: 25px;
+
 }
+
+/* Editorial */
 
 .editorial {
     width: 100%;
@@ -269,6 +282,7 @@ a {
     background-color: var(--primary-bg-color);
 }
 
+/* Editorial Grid */
 
 .grid-container {
     display: grid;
@@ -339,14 +353,16 @@ a {
     font-weight: 700;
 }
 
+/* Testimonial */
+
 .testimonial-container {
     background-color: var(--brown-bg-color);
     color: var(--white-bg-color);
-    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5rem;
 }
 
 cite {
@@ -355,9 +371,11 @@ cite {
 }
 
 blockquote {
+    max-width: 50rem;
     font-size: 1.5rem;
-    margin: 5px;
     font-weight: 200;
+    text-align: center;
+    margin: 5px;
 }
 
 .testimonial-container img {
@@ -369,15 +387,16 @@ blockquote {
     margin: 20px;
 }
 
+/* Call To Action */
+
 .cta-container {
     background-color: var(--secondary-bg-color);
     color: var(--black-bg-color);
-    height: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 5rem;
 }
 
 .cta h2 {
@@ -386,7 +405,7 @@ blockquote {
 }
 
 .cta p {
-    width: 40%;
+    width: 50%;
     font-size: 1.2rem;
     font-weight: 300;
     text-align: center;
@@ -396,7 +415,7 @@ blockquote {
 .cta button {
     width: 200px;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     border: none;
     border-radius: 15px;
     margin-top: 25px;
@@ -406,9 +425,13 @@ blockquote {
     cursor: pointer;
 }
 
+/* Footer */
+
 footer {
     background-color: var(--primary-bg-color);
 }
+
+/* Logo */
 
 .logo-footer-img {
     align-items: center;
@@ -467,5 +490,141 @@ footer h3 {
 
 footer p {
     font-size: 0.8rem;
-    width: 20vw;
+    width: 70%;
+}
+
+/* Responsive */
+
+/* Mobile Screen */
+
+@media only screen and (max-width: 768px) {
+
+    /* Header */
+
+    .header-container {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 0.7rem;
+        padding: 15px;
+    }
+
+    /* Navbar */
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .signup {
+        margin: 15px;
+        text-align: center;
+    }
+
+
+    /* Hero */
+
+    .hero-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .hero-text {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .hero h1 {
+        padding: 10px;
+    }
+
+    .hero p {
+        padding: 10px;
+    }
+
+    /* Companies Logos */
+
+    .trusted-container {
+        text-align: center;
+    }
+
+    .trusted-container h2 {
+        margin-top: 50px;
+        letter-spacing: normal;
+    }
+
+    .companies {
+        margin: 0;
+    }
+
+    /* Value */
+
+    .value-container {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+        padding: 15px;
+    }
+
+    .value p {
+        width: 100%;
+    }
+
+    /* Benefits */
+
+    .benefits-container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 0px;
+    }
+
+    /* Editorial */
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Testimonial */
+
+    .testimonial-container {
+        text-align: center;
+    }
+
+    blockquote {
+        font-size: 1.3rem;
+        padding: 25px;
+    }
+
+    .testimonial-container img {
+        width: 20%;
+    }
+
+    /* Call To Action */
+
+    .cta p {
+        width: 100%;
+    }
+
+    /* Footer */
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer p {
+        width: 100%;
+    }
 }
