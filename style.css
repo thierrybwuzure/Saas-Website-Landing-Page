@@ -102,15 +102,15 @@ a {
 }
 
 /* Hamburger X animation when menu is open */
-.menu-toggle:checked ~ .hamburger .bar:nth-child(1) {
+.menu-toggle:checked~.hamburger .bar:nth-child(1) {
     transform: rotate(45deg) translate(5px, 6px);
 }
 
-.menu-toggle:checked ~ .hamburger .bar:nth-child(2) {
+.menu-toggle:checked~.hamburger .bar:nth-child(2) {
     opacity: 0;
 }
 
-.menu-toggle:checked ~ .hamburger .bar:nth-child(3) {
+.menu-toggle:checked~.hamburger .bar:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -6px);
 }
 
@@ -472,7 +472,6 @@ footer {
 
 .logo-footer-img {
     align-items: center;
-    align-items: center;
     justify-content: center;
 }
 
@@ -539,27 +538,32 @@ footer p {
     /* Header */
 
     .header-container {
-        flex-direction: row;      /* Keep logo and hamburger on same row */
-        flex-wrap: wrap;          /* Allow nav to wrap below */
+        flex-direction: row;
+        /* Keep logo and hamburger on same row */
+        flex-wrap: wrap;
+        /* Allow nav to wrap below */
         height: auto;
         padding: 10px 20px;
     }
 
     .logo {
         font-size: 0.8rem;
-        margin-left: 0;           /* Remove desktop margin */
+        margin-left: 0;
+        /* Remove desktop margin */
     }
 
     /* Hamburger */
 
     .hamburger {
         display: flex;
-        margin-left: auto;        /* Push to right side */
+        margin-left: auto;
+        /* Push to right side */
     }
 
     /* Nav drops below header */
     nav {
-        flex-basis: 100%;         /* Take full width, forces wrap */
+        flex-basis: 100%;
+        /* Take full width, forces wrap */
         flex-direction: column;
         margin-right: 0;
         padding: 0;
@@ -576,18 +580,18 @@ footer p {
 
     nav ul li {
         padding: 15px 0;
-        border-bottom: 1px solid rgba(0,0,0,0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 
-    .menu-toggle:checked ~ nav ul {
+    .menu-toggle:checked~nav ul {
         display: flex;
     }
 
-    nav > a {
+    nav>a {
         display: none;
     }
 
-    .menu-toggle:checked ~ nav > a {
+    .menu-toggle:checked~nav>a {
         display: block;
         margin: 15px auto;
     }
@@ -687,6 +691,14 @@ footer p {
 
     /* Footer */
 
+    .logo-footer {
+        text-align: left;
+    }
+
+    .description {
+        border: none;
+    }
+
     .footer-container {
         display: flex;
         flex-direction: column;
@@ -694,5 +706,9 @@ footer p {
 
     footer p {
         width: 100%;
+    }
+
+    .small {
+        text-align: center;
     }
 }
