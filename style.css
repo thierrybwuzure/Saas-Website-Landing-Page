@@ -127,6 +127,13 @@ a {
     cursor: pointer;
     text-transform: uppercase;
     font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.signup:hover {
+    background-color: var(--black-bg-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Hero */
@@ -174,6 +181,14 @@ a {
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
+    background-color: var(--yellorange--color);
+    transition: all 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: var(--yellorange2-bg-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hero-image img {
@@ -461,6 +476,13 @@ blockquote {
     padding: 20px;
     background-color: var(--yellorange--color);
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta button:hover {
+    background-color: var(--yellorange2-bg-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
@@ -471,25 +493,23 @@ footer {
 
 /* Logo */
 
-.logo-footer-img {
-    align-items: center;
-    justify-content: center;
-}
-
 .logo-footer {
-    color: var(--white-bg-color);
-    align-items: center;
-    justify-content: center;
-    text-align: right;
+    color: var(--black-bg-color);
+    text-align: left;
     text-transform: uppercase;
     margin: 16px 0;
     padding: 20px;
-    font-weight: 700;
-    font-size: 2rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    grid-column: 1/2;
 }
 
-#logo-footer {
-    grid-column: 1/2;
+.logo-footer img {
+    width: 16px;
+}
+
+.social-links {
+    margin-top: 15px;
 }
 
 .description {
@@ -671,7 +691,8 @@ footer p {
     }
 
     #item0 {
-        order: -1;  /* Move item0 before grid-image */
+        order: -1;
+        /* Move item0 before grid-image */
     }
 
     .grid-image {
@@ -744,7 +765,7 @@ footer p {
         margin-right: 15px;
     }
 
-    nav > ul {
+    nav>ul {
         gap: 15px;
     }
 
