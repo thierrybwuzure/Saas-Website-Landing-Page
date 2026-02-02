@@ -203,6 +203,7 @@ a {
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 14px;
 }
 
@@ -323,7 +324,7 @@ a {
 
 .grid-container {
     display: grid;
-    grid-template-rows: 300px 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-columns: 300px 1fr 1fr;
     gap: 25px;
     width: 75%;
@@ -360,6 +361,7 @@ a {
 #item0 p {
     font-weight: 100;
     letter-spacing: 1px;
+    height: auto;
 }
 
 #item0 a {
@@ -531,7 +533,8 @@ footer p {
 
 /* Responsive */
 
-/* Mobile Screen */
+
+/* Mobile Screen (max 768px) */
 
 @media only screen and (max-width: 768px) {
 
@@ -668,6 +671,12 @@ footer p {
         width: 100%;
     }
 
+    .grid-image {
+        height: 200px;
+        width: 100%;
+        background-size: contain;
+    }
+
     /* Testimonial */
 
     .testimonial-container {
@@ -709,6 +718,64 @@ footer p {
     }
 
     .small {
+        text-align: center;
+    }
+}
+
+/* Tablet Screen (769px - 1024px) */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+    .signup {
+        width: 100px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        padding: 3rem;
+        gap: 20px;
+    }
+
+    .hero-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    .value-container {
+        flex-direction: column;
+        padding: 4rem;
+    }
+
+    .benefits-container {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 30px;
+    }
+
+    .grid-container {
+        width: 90%;
+        padding: 30px;
+        grid-template-columns: 200px 1fr 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    .cta p {
+        width: 70%;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 2fr 1fr 1fr;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .small {
+        grid-column: 1/5;
         text-align: center;
     }
 }
