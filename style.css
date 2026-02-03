@@ -351,6 +351,8 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    grid-column: 1 / 2;
+    height: auto;
 }
 
 #item0 {
