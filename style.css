@@ -435,7 +435,6 @@ blockquote {
 .testimonial-container img {
     background-color: var(--white-bg-color);
     width: 7%;
-    height: auto;
     border: 1px solid var(--white-bg-color);
     border-radius: 50%;
     margin: 20px;
