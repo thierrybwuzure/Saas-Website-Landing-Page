@@ -361,7 +361,7 @@ a {
     grid-column-end: 4;
     background-color: var(--black-bg-color);
     color: var(--white-bg-color);
-    padding: 50px;
+    padding: 3rem;
 }
 
 #item0 small {
@@ -910,19 +910,27 @@ footer p {
         padding: 10px;
     }
 
+    .hero-image img {
+        margin-bottom: 40px;
+    }
+
     /* Companies Logos */
 
     .trusted-container {
+        width: 100%;
         text-align: center;
     }
 
     .trusted-container h2 {
         margin-top: 50px;
         letter-spacing: normal;
+        line-height: 25px;
     }
 
-    .companies {
-        margin: 0;
+    .companies-logo img {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
     }
 
     /* Value */
@@ -932,12 +940,28 @@ footer p {
         flex-direction: column;
         gap: 15px;
         height: auto;
+        padding: 25px;
+    }
+
+    .value-image {
+        margin-top: 30px;
+    }
+
+    .value h2 {
+        font-size: 1.3rem;
         padding: 15px;
     }
 
     .value p {
         width: 100%;
+        padding: 15px;
     }
+
+    .signature {
+        padding: 15px;
+        gap: 2px;
+    }
+
 
     /* Benefits */
 
@@ -945,7 +969,12 @@ footer p {
         flex-direction: column;
         width: 100%;
         height: auto;
-        padding: 0px;
+        padding: 15px;
+    }
+
+    .benefits-container img {
+        padding: 15px;
+        box-shadow: none;
     }
 
     /* Editorial */
@@ -958,11 +987,19 @@ footer p {
 
     #item0 {
         order: -1;
-        /* Move item0 before grid-image */
+        padding: 20px;
+    }
+
+    #item0 h2 {
+        font-size: 1.2rem;
+    }
+
+    #item0 p {
+        font-size: 1rem;
     }
 
     .grid-image {
-        height: 200px;
+        height: 300px;
         width: 100%;
         background-size: contain;
     }
@@ -971,23 +1008,38 @@ footer p {
 
     .testimonial-container {
         width: 100%;
+        height: 400px;
         text-align: center;
+        padding: 10px;
     }
 
     blockquote {
-        font-size: 1.3rem;
+        width: 100%;
+        font-size: 1rem;
+        padding: 15px;
     }
 
     .testimonial-container img {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         object-fit: cover;
+    }
+
+    .testimonial-container cite {
+        font-size: 0.8rem;
     }
 
     /* Call To Action */
 
+    .cta-container {
+        padding: 10px;
+        height: 600px;
+    }
+
     .cta p {
         width: 100%;
+        font-size: 1rem;
+        padding: 10px;
     }
 
     /* Footer */
