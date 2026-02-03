@@ -970,6 +970,7 @@ footer p {
     /* Testimonial */
 
     .testimonial-container {
+        width: 100%;
         text-align: center;
     }
 
