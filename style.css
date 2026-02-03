@@ -980,7 +980,9 @@ footer p {
     }
 
     .testimonial-container img {
-        width: 20%;
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
     }
 
     /* Call To Action */
