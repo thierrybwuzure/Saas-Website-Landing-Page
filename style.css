@@ -926,10 +926,16 @@ footer p {
         line-height: 25px;
     }
 
-    .companies-logo img {
-        display: flex;
-        flex-direction: row;
-        margin: 10px;
+    .companies-logo {
+        flex-wrap: nowrap;
+        gap: 15px;
+        overflow-x: auto;
+    }
+
+    .companies {
+        width: 2rem;
+        margin: 0;
+        flex-shrink: 0;
     }
 
     /* Value */
