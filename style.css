@@ -922,7 +922,6 @@ footer p {
     }
 
     .trusted-container h2 {
-        margin-top: 50px;
         letter-spacing: normal;
         line-height: 25px;
     }
@@ -983,6 +982,7 @@ footer p {
         display: flex;
         flex-direction: column;
         width: 100%;
+        gap: 10px;
     }
 
     #item0 {
