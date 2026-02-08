@@ -820,7 +820,6 @@ footer p {
 .google-maps {
     width: 100%;
     margin-top: 100px;
-    background-color: var(--white-bg-color);
 }
 
 .google-maps h2 {
@@ -835,7 +834,6 @@ iframe {
     max-width: 100%;
     width: 950px;
     height: 500px;
-    border-radius: 10px;
     margin: 0 auto;
     margin-bottom: 50px;
 }
