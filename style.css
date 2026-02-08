@@ -818,9 +818,9 @@ footer p {
 }
 
 .google-maps {
+    width: 100%;
     margin-top: 100px;
     background-color: var(--white-bg-color);
-    padding: 25px;
 }
 
 .google-maps h2 {
