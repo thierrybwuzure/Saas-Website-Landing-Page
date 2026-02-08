@@ -1105,12 +1105,26 @@ iframe {
 
     /* Contact Page Mobile */
 
+    .contact-section {
+        overflow-x: hidden;
+    }
+
     .contact-container {
         grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 20px;
+        max-width: 100%;
     }
 
     .contact-info {
         order: -1;
+        padding: 20px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        max-width: 100%;
     }
 
     .google-maps {
