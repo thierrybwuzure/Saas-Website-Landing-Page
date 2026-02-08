@@ -742,6 +742,7 @@ footer p {
     padding: 0 20px;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
     gap: 50px;
 }
 
@@ -802,7 +803,7 @@ footer p {
 }
 
 .info-item p {
-    color: #666;
+    color: #707070;
     font-size: 0.95rem;
 }
 
@@ -814,6 +815,29 @@ footer p {
 .contact-social a {
     color: var(--yellorange--color);
     font-weight: 600;
+}
+
+.google-maps {
+    margin-top: 100px;
+    background-color: var(--white-bg-color);
+    padding: 25px;
+}
+
+.google-maps h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+iframe {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    width: 950px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 /* Responsive */
