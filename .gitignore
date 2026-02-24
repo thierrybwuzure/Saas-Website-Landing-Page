@@ -1,0 +1,14 @@
+# Mac system files
+.DS_Store
+.DS_Store?
+**/.DS_Store
+
+# Editor settings
+.vscode/
+
+# Test files
+test.html
+
+# Documents & personal files
+*.pdf
+*.txt
