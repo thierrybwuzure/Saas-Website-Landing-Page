@@ -1,6 +1,6 @@
 # Digital House Company
 
-<p align="center">
+<p>
   <img src="asset/preview.jpg" alt="Digital House Company Preview" width="800">
 </p>
 
